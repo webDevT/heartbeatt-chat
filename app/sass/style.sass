@@ -149,15 +149,18 @@ body
             height: 100%
             background-color: rgba(#fff, 0.5)
             transform: translateX(-40px) skewX(-45deg)
-            animation: move-light 1.5s
+            animation: move-light 5s
+            animation-iteration-count: infinite
             
 @keyframes move-light
     0%
         transform: translateX(-40px) skewX(-45deg)
-    25%
+    10%
         transform: translateX(400px) skewX(-45deg)
-    75%
+    14%
         transform: translateX(400px) skewX(-45deg)
+    18%
+        transform: translateX(-40px) skewX(-45deg)
     100%
         transform: translateX(-40px) skewX(-45deg)
 .button 
