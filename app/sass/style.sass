@@ -115,7 +115,8 @@ body
 //end chart content 
 
 //start buttons wrapper
-.buttons-wrapper
+.buttons-wrapper,
+.buttons-wrapper--2
     position: fixed 
     bottom: 10px
     left: 50%
@@ -129,7 +130,7 @@ body
         align-items: center
         justify-content: space-between
     .button 
-        width: 48%
+        width: 49%
         display: flex 
         justify-content: center 
         align-items: center
@@ -140,6 +141,7 @@ body
         font-size: 16px
         overflow: hidden
         position: relative
+        font-size: 15px
         &:before
             content: ''
             position: absolute
@@ -165,9 +167,11 @@ body
         transform: translateX(-40px) skewX(-45deg)
 .button 
     cursor: pointer
-.buttons-wrapper .button--pic:before 
+.buttons-wrapper .button--pic:before,
+.buttons-wrapper--2 .button--send-more:before
     animation-delay: 2s
-.buttons-wrapper .button--pic
+.buttons-wrapper .button--pic,
+.buttons-wrapper--2 .button--send-more
     background: linear-gradient(#9A69D2, #BD8CE8)
 
 //end buttons wrapper
@@ -239,6 +243,63 @@ body
     width: 50%
 .question-2-pic
     display: none  
+.chart-list
+    overflow: hidden
+    height: calc(100vh - 192px)
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    padding-bottom: 70px
+    box-sizing: border-box
+.telegram-button
+    position: fixed 
+    bottom: 10px
+    left: 50% 
+    transform: translateX(-50%)
+    width: 100%
+    display: none
+.telegram-button-content
+    width: 600px 
+    max-width: 90%
+    height: 50px 
+    background: linear-gradient(#9A69D2, #BD8CE8)
+    margin-left: auto 
+    margin-right: auto
+    border-radius: 50px 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    color: #fff 
+    font-weight: 700
+    font-size: 22px
+    position: relative
+    overflow: hidden
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 30px
+        height: 100%
+        background-color: rgba(#fff, 0.5)
+        transform: translateX(-70px) skewX(-45deg)
+        animation: move-light2 5s
+        animation-iteration-count: infinite
+@keyframes move-light2
+    0%
+        transform: translateX(-70px) skewX(-45deg)
+    10%
+        transform: translateX(700px) skewX(-45deg)
+    14%
+        transform: translateX(700px) skewX(-45deg)
+    18%
+        transform: translateX(-70px) skewX(-45deg)
+    100%
+        transform: translateX(-70px) skewX(-45deg)
+.question-2-2
+    display: none
+.buttons-wrapper--2
+    display: none
 @import "media"
 
 
