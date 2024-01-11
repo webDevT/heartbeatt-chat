@@ -1,0 +1,16 @@
+{
+  "bot_name": "Katerina",
+  "bot_reply_1": "Hey! It’s a pleasure to meet you! Are you ready for a flirt?",
+  "bot_reply_2": "Lets start",
+  "bot_reply_3": "Here is my pic! Enjoy!",
+  "button_text_1": "Yes, I want to flirt!",
+  "button_text_2": "Send your pic first",
+  "button_text_3": "Amazing!",
+  "button_text_4": "Can you send more?",
+  "bot_photo": "img/photo.png",
+  "bot_big_photo": "img/photo.png",
+  "user_photo": "img/photo2.jpeg",
+  "text_for_typing": "typing"
+
+  
+}

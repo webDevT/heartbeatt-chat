@@ -1,226 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Dating game in Telegram!</title>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+	
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
+
+
+
+
 <body>
 
 	<div class="content">
 
-	
-	<!-- start header -->
-	<header class="header">
-		<div class="container">
-			<div class="header__title">
-				Love Stories: 
-			</div>
 
-			<div class="header__sub-title">
-				Dating game in Telegram!
-			</div>
-		
-		</div>
-	</header>
-	<!-- end header -->
-
-	<!-- start chart content -->
-	<div class="chart-content">
-		<div class="container">
-
-			<!-- start user info -->
-			<div class="user-info">
-
-				<div class="user-photo-wrapper">
-					<img src="img/photo.png" alt="" class="user-photo">
+		<!-- start header -->
+		<header class="header">
+			<div class="container">
+				<div class="header__title">
+					Love Stories:
 				</div>
 
-				<div class="user-info__content">
-					<div class="user-info__title">
-						Katerina, 28
-					</div>
-					<div class="user-info__text">
-						Looking for a new friends for flirt and chat
-					</div>
+				<div class="header__sub-title">
+					Dating game in Telegram!
 				</div>
+
 			</div>
-			<!-- end user info -->
+		</header>
+		<!-- end header -->
 
-			<!-- start chart list -->
-			<div class="chart-list">
-				<div class="chart-item question-item question-1">
-				<img src="img/photo.png" alt="" class="chart-item__photo">
+		<!-- start chart content -->
+		<div class="chart-content">
+			<div class="container">
 
-				<div class="bable">
-					<div class="bable-text">
-						Hey! It’s a pleasure to meet you! Are you ready for a flirt?
+				<!-- start user info -->
+				<div class="user-info">
+
+					<div class="user-photo-wrapper">
+						<img src="" alt="" class="user-photo bot_photo">
 					</div>
 
-					<div class="type-item">
-						Katerina typing <div class="wave">
-							<span class="dot"></span>
-							<span class="dot"></span>
-							<span class="dot"></span>
+					<div class="user-info__content">
+						<div class="user-info__title">
+							<span class="bot_name"></span>, 28
 						</div>
-					 </div>
-					
+						<div class="user-info__text">
+							Looking for a new friends for flirt and chat
+						</div>
+					</div>
 				</div>
-			</div>
+				<!-- end user info -->
 
-			<div class="chart-item chart-item--reverse answer-1 answer-item">
-				<div class="chart-item__wrapper">
-					<div class="bable">
-						Yes, I want to flirt!
-				</div>
+				<!-- start chart list -->
+				<div class="chart-list">
+					<div class="chart-item question-item question-1">
+						<img src="" alt="" class="chart-item__photo bot_photo">
 
-				<img src="img/photo2.jpeg" alt="" class="chart-item__photo">
-				</div>
-				
-			</div>
+						<div class="bable">
+							<div class="bable-text bot_reply_1"></div>
 
+							<div class="type-item">
+								<span class="bot_name"></span> &nbsp;<span class="text_for_typing"></span> <div class="wave">
+									<span class="dot"></span>
+									<span class="dot"></span>
+									<span class="dot"></span>
+								</div>
+							</div>
 
-		
-
-			<div class="chart-item chart-item--reverse answer-1-option-2 answer-item">
-				<div class="chart-item__wrapper">
-					<div class="bable">
-					Send your pic first
-				</div>
-
-				<img src="img/photo2.jpeg" alt="" class="chart-item__photo">
-				</div>
-				
-			</div>
-
-			<div class="chart-item question-item question-2">
-
-				<div class="question-wrapper">
-					<img src="img/photo.png" alt="" class="chart-item__photo">
-
-				<div class="bable">
-					<div class="bable-text">
-						Here is my pic! Enjoy!
+						</div>
 					</div>
 
-					<div class="type-item">
-						Katerina typing <div class="wave">
-							<span class="dot"></span>
-							<span class="dot"></span>
-							<span class="dot"></span>
+					<div class="chart-item chart-item--reverse answer-1 answer-item">
+						<div class="chart-item__wrapper">
+							<div class="bable button_text_1"></div>
+
+							<img src="" alt="" class="chart-item__photo user_photo">
 						</div>
-					 </div>
-					
-				</div>
-				</div>
-				
-			</div>
 
-			<div class="chart-item question-item question-2-pic">
-
-				<div class="question-wrapper">
-					<img src="img/photo.png" alt="" class="chart-item__photo">
-
-				<div class="bable bable--pic">
-					<img src="img/photo.png" alt="" class="pic">
-					
-				</div>
-				</div>
-				
-			</div>
-
-			<div class="chart-item question-item question-2-2">
-
-				<div class="question-wrapper">
-					<img src="img/photo.png" alt="" class="chart-item__photo">
-
-				<div class="bable">
-					<div class="bable-text">
-						Lets start
 					</div>
 
-					<div class="type-item">
-						Katerina typing <div class="wave">
-							<span class="dot"></span>
-							<span class="dot"></span>
-							<span class="dot"></span>
+
+
+
+					<div class="chart-item chart-item--reverse answer-1-option-2 answer-item">
+						<div class="chart-item__wrapper">
+							<div class="bable button_text_2"></div>
+
+							<img src="" alt="" class="chart-item__photo user_photo">
 						</div>
-					 </div>
-					
+
+					</div>
+
+					<div class="chart-item question-item question-2">
+
+						<div class="question-wrapper">
+							<img src="img/photo.png" alt="" class="chart-item__photo">
+
+							<div class="bable">
+								<div class="bable-text bot_reply_3"></div>
+
+								<div class="type-item">
+									<span class="bot_name"></span> &nbsp;<span class="text_for_typing"></span> <div class="wave">
+										<span class="dot"></span>
+										<span class="dot"></span>
+										<span class="dot"></span>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="chart-item question-item question-2-pic">
+
+						<div class="question-wrapper">
+							<img src="img/photo.png" alt="" class="chart-item__photo">
+
+							<div class="bable bable--pic">
+								<a href="" data-fancybox="gallery1" class="fancybox bot_big_photo">
+									<img data-src="" alt="" class="pic bot_big_photo">
+								</a>
+								
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="chart-item question-item question-2-2">
+
+						<div class="question-wrapper">
+							<img src="img/photo.png" alt="" class="chart-item__photo">
+
+							<div class="bable">
+								<div class="bable-text bot_reply_2"></div>
+
+								<div class="type-item">
+									<span class="bot_name"></span> &nbsp;<span class="text_for_typing"></span> <div class="wave">
+										<span class="dot"></span>
+										<span class="dot"></span>
+										<span class="dot"></span>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+
+
 				</div>
-				</div>
-				
+
+				<!-- end chart list -->
+
+			</div>
+		</div>
+		<!-- end chart content -->
+
+		<!-- start buttons wrapper -->
+		<div class="buttons-wrapper">
+			<div class="container">
+				<div class="button button--flirt button_text_1"></div>
+				<div class="button button--pic button_text_2"></div>
 			</div>
 
+		</div>
+		<!-- end buttons wrapper -->
 
-
+		<!-- start buttons wrapper -->
+		<div class="buttons-wrapper--2">
+			<div class="container">
+				<div class="button button--amazing button_text_3"></div>
+				<div class="button button--send-more button_text_4"></div>
 			</div>
-			
-			<!-- end chart list -->
 
 		</div>
-	</div>
-	<!-- end chart content -->
-
-	<!-- start buttons wrapper -->
-	<div class="buttons-wrapper">
-		<div class="container">
-			<div class="button button--flirt">
-			Yes, I want to flirt! 
-		</div>
-		<div class="button button--pic">
-			Send your pic first
-		</div>
-		</div>
-		
-	</div>
-	<!-- end buttons wrapper -->
-
-	<!-- start buttons wrapper -->
-	<div class="buttons-wrapper--2">
-		<div class="container">
-			<div class="button button--amazing">
-				Amazing!
-		</div>
-		<div class="button button--send-more">
-			Can you send more?
-		</div>
-		</div>
-		
-	</div>
-	<!-- end buttons wrapper -->
+		<!-- end buttons wrapper -->
 
 
 
-	<div class="telegram-button">
-		<div class="telegram-button-content">
-			Continue in Telegram
+		<div class="telegram-button">
+			<a href="https://t.me/love_stories_hotbot" class="telegram-button-content">
+				Continue in Telegram
+			</a>
+
 		</div>
-		
+
+
 	</div>
 
-		
-	</div>
 
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Загружаем файл JSON
+			fetch('output.json')
+				.then(response => response.json())
+				.then(data => {
+					// Используем данные из файла JSON и устанавливаем их в соответствующие элементы
+					document.querySelectorAll('.bot_name').forEach(function (element) {
+						element.innerText = data.bot_name;
+					});
+
+					document.querySelectorAll('.bot_reply_1').forEach(function (element) {
+						element.innerText = data.bot_reply_1;
+					});
+
+
+					document.querySelectorAll('.bot_reply_2').forEach(function (element) {
+						element.innerText = data.bot_reply_2;
+					});
+
+					document.querySelectorAll('.button_text_1').forEach(function (element) {
+						element.innerText = data.button_text_1;
+					});
+
+					document.querySelectorAll('.button_text_2').forEach(function (element) {
+						element.innerText = data.button_text_2;
+					});
+
+					document.querySelectorAll('.button_text_3').forEach(function (element) {
+						element.innerText = data.button_text_3;
+					});
+
+					document.querySelectorAll('.button_text_4').forEach(function (element) {
+						element.innerText = data.button_text_4;
+					});
+
+					document.querySelectorAll('.bot_reply_3').forEach(function (element) {
+						element.innerText = data.bot_reply_3;
+					});
+
+					document.querySelectorAll('.bot_photo').forEach(function (element) {
+						element.src = data.bot_photo;
+					});
+
+					document.querySelectorAll('.user_photo').forEach(function (element) {
+						element.src = data.user_photo;
+					});
+
+					document.querySelectorAll('.bot_big_photo').forEach(function (element) {
+						element.src = data.bot_big_photo;
+					});
+
+					document.querySelectorAll('.bot_big_photo').forEach(function (element) {
+						element.href = data.bot_big_photo;
+					});
+
+					document.querySelectorAll('.text_for_typing').forEach(function (element) {
+						element.innerText = data.text_for_typing;
+					});
+				})
+				.catch(error => console.error('Ошибка при загрузке файла JSON:', error));
+		});
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+		<script>
+			 $('[data-fancybox="gallery1"]').fancybox({
+  transitionEffect: "fade",
+  transitionDuration: 0,
+
+});
+		</script>
 	<script src="js/main.js"></script>
 
 	<script>
-		$('.type-item').delay(3000 ).fadeOut();
-		$('.bable-text').delay(3500 ).fadeIn();
+		$('.type-item').delay(3000).fadeOut();
+		$('.bable-text').delay(3500).fadeIn();
 		$('.buttons-wrapper').delay(4000).fadeIn();
-		$('.button--flirt').click(function(){
+		$('.button--flirt').click(function () {
 			$('.answer-1').fadeIn();
 			$(this).parent().parent().addClass('disabled');
 			$('.question-2-2').delay(1000).fadeIn();
-			$('.telegram-button').delay(1000).fadeIn();
+			$('.question-2-2 .type-item').fadeIn().delay(3000).fadeOut();
+			$('.question-2-2 .bable-text').hide().delay(4000).fadeIn();
+			$('.telegram-button').delay(4000).fadeIn();
 			$(this).parent().parent().addClass('disabled');
 		})
 
-		$('.button--pic').click(function(){
+		$('.button--pic').click(function () {
 			$('.answer-1-option-2').fadeIn();
 			$(this).parent().parent().addClass('disabled');
 			$('.question-2').delay(1000).fadeIn();
@@ -231,14 +298,19 @@
 			$('.buttons-wrapper--2').delay(6000).fadeIn()
 		})
 
-		$('.buttons-wrapper--2 .button').click(function(){
+		$('.buttons-wrapper--2 .button').click(function () {
 			$(this).parent().fadeOut();
 			$('.telegram-button').delay(700).fadeIn();
 		})
 
 
-		
+
+
+	</script>
+
+	<script>
 
 	</script>
 </body>
+
 </html>
