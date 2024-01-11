@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Title</title>
+	<title>Dating game in Telegram!</title>
 
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -51,13 +51,13 @@
 			<!-- end user info -->
 
 			<!-- start chart list -->
-			<div class="chart-item">
+			<div class="chart-item question-item question-1">
 				<img src="img/photo.png" alt="" class="chart-item__photo">
 
 				<div class="bable">
-					<!-- <div class="bable-text">
+					<div class="bable-text">
 						Hey! It’s a pleasure to meet you! Are you ready for a flirt?
-					</div> -->
+					</div>
 
 					<div class="type-item">
 						Katerina typing <div class="wave">
@@ -65,17 +65,31 @@
 							<span class="dot"></span>
 							<span class="dot"></span>
 						</div>
-					</div>
+					 </div>
 					
 				</div>
 			</div>
 
-			<div class="chart-item chart-item--reverse">
-				<div class="bable">
+			<div class="chart-item chart-item--reverse answer-1 answer-item">
+				<div class="chart-item__wrapper">
+					<div class="bable">
 					Send your pic first
 				</div>
 
 				<img src="img/photo2.jpeg" alt="" class="chart-item__photo">
+				</div>
+				
+			</div>
+
+			<div class="chart-item chart-item--reverse answer-1-option-2 answer-item">
+				<div class="chart-item__wrapper">
+					<div class="bable">
+					Send your pic first
+				</div>
+
+				<img src="img/photo2.jpeg" alt="" class="chart-item__photo">
+				</div>
+				
 			</div>
 			<!-- end chart list -->
 
@@ -86,7 +100,7 @@
 	<!-- start buttons wrapper -->
 	<div class="buttons-wrapper">
 		<div class="container">
-			<div class="button">
+			<div class="button button--flirt">
 			Yes, I want to flirt! 
 		</div>
 		<div class="button button--pic">
@@ -101,5 +115,24 @@
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		$('.type-item').delay(3000 ).fadeOut();
+		$('.bable-text').delay(3500 ).fadeIn();
+		$('.buttons-wrapper').delay(4000).fadeIn();
+		$('.button--flirt').click(function(){
+			$('.answer-1').fadeIn();
+			$(this).parent().parent().addClass('disabled');
+		})
+
+		$('.button--pic').click(function(){
+			$('.answer-1-option-2').fadeIn();
+			$(this).parent().parent().addClass('disabled');
+		})
+
+
+		
+
+	</script>
 </body>
 </html>
