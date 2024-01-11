@@ -91,6 +91,42 @@
 				</div>
 				
 			</div>
+
+			<div class="chart-item question-item question-2">
+
+				<div class="question-wrapper">
+					<img src="img/photo.png" alt="" class="chart-item__photo">
+
+				<div class="bable">
+					<div class="bable-text">
+						Here is my pic! Enjoy!
+					</div>
+
+					<div class="type-item">
+						Katerina typing <div class="wave">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+					 </div>
+					
+				</div>
+				</div>
+				
+			</div>
+
+			<div class="chart-item question-item question-2-pic">
+
+				<div class="question-wrapper">
+					<img src="img/photo.png" alt="" class="chart-item__photo">
+
+				<div class="bable bable--pic">
+					<img src="img/photo.png" alt="" class="pic">
+					
+				</div>
+				</div>
+				
+			</div>
 			<!-- end chart list -->
 
 		</div>
@@ -128,6 +164,10 @@
 		$('.button--pic').click(function(){
 			$('.answer-1-option-2').fadeIn();
 			$(this).parent().parent().addClass('disabled');
+			$('.question-2').delay(1000).fadeIn();
+			$('.question-2-pic').delay(5000).fadeIn();
+			$('.question-2 .type-item').fadeIn().delay(3000).fadeOut();
+			$('.question-2 .bable-text').hide().delay(4000).fadeIn();
 		})
 
 
