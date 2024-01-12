@@ -44,7 +44,7 @@
   "button_color": "linear-gradient(#9A69D2, #BD8CE8)",
 
   "_comment": "Фоновое изображение чата",
-  "chat_background": "background: url(/img/bg.jpg);"
+  "chat_background": "background:url(/img/bg.jpg);"
 
 
   
