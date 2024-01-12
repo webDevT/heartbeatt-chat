@@ -24,17 +24,12 @@
 			<div class="container">
 				<div class="header__text">
 					<div class="header__title">
-						Love Stories:
 					</div>
 
-					<div class="header__sub-title">
-						Dating game in Telegram!
-					</div>
+					<div class="header__sub-title"></div>
 				</div>
 
-				<div class="header__btn">
-					Start
-				</div>
+				<div class="header__btn"></div>
 
 
 			</div>
@@ -350,6 +345,26 @@
 
 					document.querySelectorAll('.text_for_typing').forEach(function (element) {
 						element.innerText = data.text_for_typing;
+					});
+
+					document.querySelectorAll('.button').forEach(function (element) {
+						element.style = data.button_color;
+					});
+
+					document.querySelectorAll('.content').forEach(function (element) {
+						element.style = data.chat_background;
+					});
+
+					document.querySelectorAll('.header__title').forEach(function (element) {
+						element.innerHTML = data.page_title;
+					});
+
+					document.querySelectorAll('.header__sub-title').forEach(function (element) {
+						element.innerHTML = data.page_sub_title;
+					});
+
+					document.querySelectorAll('.header__btn').forEach(function (element) {
+						element.innerHTML = data.header_button_text;
 					});
 
 				})

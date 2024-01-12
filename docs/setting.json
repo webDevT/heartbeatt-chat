@@ -1,4 +1,11 @@
 {
+
+  "_comment": "Настройки хедера",
+  "page_title": "Love Stories:",
+  "page_sub_title": "Dating game in Telegram!",
+  "header_button_text": "Start",
+
+
   "_comment": "Общие настройки",
   "bot_name": "Katerina",
   "text_for_typing": "typing",
@@ -31,12 +38,13 @@
 
   "_comment": "Пути к изображениям и фотографиям бота и пользователя",
   "bot_avatar": "img/photo.png",
-  "user_avatar": "img/photo2.jpeg"
+  "user_avatar": "img/photo2.jpeg",
 
+  "_comment": "Цвет кнопок",
+  "button_color": "linear-gradient(#9A69D2, #BD8CE8)",
 
-
-  
-
+  "_comment": "Фоновое изображение чата",
+  "chat_background": "background: url(../img/bg.jpg);"
 
 
   
