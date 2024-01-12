@@ -16,7 +16,7 @@
 
 <body>
 
-	<div class="content">
+	<div class="content" >
 
 
 		<!-- start header -->
@@ -352,8 +352,10 @@
 					});
 
 					document.querySelectorAll('.content').forEach(function (element) {
-						element.style = data.chat_background;
+						element.style.backgroundImage = 'url(' + data.chat_background + ')';
 					});
+
+					
 
 					document.querySelectorAll('.header__title').forEach(function (element) {
 						element.innerHTML = data.page_title;

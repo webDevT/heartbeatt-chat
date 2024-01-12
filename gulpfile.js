@@ -42,6 +42,12 @@ gulp.task('html', function(){
 
 });
 
+gulp.task('json', function(){
+	return gulp.src('app/*.json')
+	.pipe(browserSync.reload({stream: true}))
+
+});
+
 gulp.task('script', function(){
 	return gulp.src('app/js/*.js')
 	.pipe(browserSync.reload({stream: true}))
@@ -74,6 +80,9 @@ gulp.task('export', function(){
 
 	let BuildImg = gulp.src('app/img/**/*.*')
 	.pipe(gulp.dest('docs/img'));
+
+	let BuildJson = gulp.src('app/*.json')
+	.pipe(gulp.dest('docs'));
 });
 
 gulp.task('watch', function(){
@@ -84,4 +93,4 @@ gulp.task('watch', function(){
 
 gulp.task('build', gulp.series('clean', 'export'));
 
-gulp.task('default', gulp.parallel('css', 'sass', 'browser-sync', 'watch'))
+gulp.task('default', gulp.parallel('css', 'sass', 'browser-sync', 'watch', 'json'))
