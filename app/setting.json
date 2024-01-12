@@ -1,16 +1,43 @@
 {
+  "_comment": "Общие настройки",
   "bot_name": "Katerina",
+  "text_for_typing": "typing",
+  "link_to_telegram": "https://t.me/love_stories_hotbot",
+
+  "_comment": "Первая реплика бота",
   "bot_reply_1": "Hey! It’s a pleasure to meet you! Are you ready for a flirt?",
-  "bot_reply_2": "Lets start",
-  "bot_reply_3": "Here is my pic! Enjoy!",
+  "bot_photo_1": "img/photo.png",
+  "photo_state": "hide",
+  "photo_position": "photo_top",
+
+  "_comment": "Вторая реплика бота (первая опция)",
+  "bot_reply_2_1": "Lets start",
+  "photo_state_2_1": "hide",
+  "photo_position_2_1": "photo_top",
+  "bot_photo_2_1": "img/photo.png",
+
+  "_comment": "Вторая реплика бота (вторая опция)",
+  "bot_reply_2_2": "Here is my pic! Enjoy!",
+  "photo_state_2_2": "show",
+  "photo_position_2_2": "photo_top",
+  "bot_photo_2_2": "img/photo.png",
+ 
+
+  "_comment": "Тексты для кнопок c ответами",
   "button_text_1": "Yes, I want to flirt!",
   "button_text_2": "Send your pic first",
   "button_text_3": "Amazing!",
   "button_text_4": "Can you send more?",
-  "bot_photo": "img/photo.png",
-  "bot_big_photo": "img/photo.png",
-  "user_photo": "img/photo2.jpeg",
-  "text_for_typing": "typing"
+
+  "_comment": "Пути к изображениям и фотографиям бота и пользователя",
+  "bot_avatar": "img/photo.png",
+  "user_avatar": "img/photo2.jpeg"
+
+
+
+  
+
+
 
   
 }

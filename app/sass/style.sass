@@ -6,6 +6,7 @@ body
     margin: 0 
     padding: 0 
     font-family: sans-serif
+ 
 .content 
     background: red 
     width: 680px 
@@ -30,6 +31,14 @@ body
     font-size: 20px 
     font-weight: 700
     color: #fff
+    display: block
+    text-decoration: none
+    .container 
+        display: flex 
+        justify-content: space-between
+        align-items: center
+.header:hover 
+    color: #fff 
 .header__title 
     font-size: 16px
 .header__sub-title 
@@ -55,8 +64,9 @@ body
     margin-right: 10px
 .user-info__title
     font-weight: 700
+    font-size: 18px
 .user-info__text
-    font-size: 14px
+    font-size: 16px
 //end user info style    
 
 //start chart content
@@ -80,6 +90,7 @@ body
     padding: 10px
     border-radius: 10px
     border-bottom-left-radius: 0
+    font-size: 16px
     position: relative
 .bable:after
     content: ''
@@ -141,7 +152,7 @@ body
         font-size: 16px
         overflow: hidden
         position: relative
-        font-size: 15px
+        font-size: 16px
         &:before
             content: ''
             position: absolute
@@ -225,8 +236,7 @@ body
         pointer-events: none
     .button:before 
         display: none
-.question-2
-    display: none
+
 .question-wrapper
     display: flex
     align-items: flex-end
@@ -240,9 +250,7 @@ body
     border-radius: 5px
 .bable--pic 
     padding: 5px
-    width: 50%
-.question-2-pic
-    display: none  
+    width: 50%  
 .chart-list
     overflow: hidden
     height: calc(100vh - 192px)
@@ -300,12 +308,38 @@ body
         transform: translateX(-70px) skewX(-45deg)
     100%
         transform: translateX(-70px) skewX(-45deg)
-.question-2-2
-    display: none
+
 .buttons-wrapper--2
     display: none
 .telegram-button-content
     text-decoration: none
+.photo_reply
+    display: none
+.photo_reply.show
+    display: block
+
+.photo_reply.hide
+    display: none
+.reply-wrapper
+    display: none
+    flex-direction: column
+.reply-wrapper1
+    display: flex
+.reply-wrapper.photo_top
+    flex-direction: column
+.reply-wrapper.photo_bottom
+    flex-direction: column-reverse
+.header__btn
+    background: #fff 
+    color: #517da2
+    border: none 
+    height: 40px 
+    padding-left: 15px 
+    padding-right: 15px 
+    border-radius: 50px
+    display: flex 
+    juctify-content: center 
+    align-items: center
 @import "media"
 
 
