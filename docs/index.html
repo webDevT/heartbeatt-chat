@@ -15,7 +15,7 @@
 
 
 <body>
-
+	
 	<div class="content" >
 
 
@@ -60,6 +60,14 @@
 
 				<!-- start chart list -->
 				<div class="chart-list">
+
+					<div class="call-to-action__wrapper">
+						<div class="call-to-action">
+						Want to Reply?
+					</div>
+					<div class="finger">👈</div>
+					</div>
+					
 
 					<!-- start bot reply 1 -->
 					<div class="reply-wrapper reply-wrapper1">
@@ -179,6 +187,16 @@
 				<!-- end chart list -->
 
 			</div>
+
+			<div class="footer">
+				<div class="footer__item">
+🔥 Most Popular Dating Game in Telegram!
+				</div>
+				<div class="footer__item">
+					 
+🔞 Sexting simulator with Pics & Vidz.
+				</div>
+			</div>
 		</div>
 		<!-- end chart content -->
 
@@ -213,7 +231,8 @@
 
 
 	</div>
-
+	
+	
 
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
@@ -348,7 +367,7 @@
 					});
 
 					document.querySelectorAll('.button').forEach(function (element) {
-						element.style = data.button_color;
+						element.style.background = data.button_color;
 					});
 
 					document.querySelectorAll('.content').forEach(function (element) {
@@ -419,6 +438,12 @@
 		$('.buttons-wrapper--2 .button').click(function () {
 			$(this).parent().fadeOut();
 			$('.telegram-button').delay(700).fadeIn();
+		})
+
+		$('.call-to-action__wrapper').delay(5000).fadeIn();
+
+		$('.button').click(function(){
+			$('.call-to-action__wrapper').fadeOut();
 		})
 
 

@@ -127,7 +127,7 @@ body
 .buttons-wrapper,
 .buttons-wrapper--2
     position: fixed 
-    bottom: 10px
+    bottom: 60px
     left: 50%
     transform: translateX(-50%) 
     width: 680px 
@@ -227,7 +227,7 @@ body
     align-items: flex-end
 .buttons-wrapper.disabled 
     .button 
-        background: #989999
+        background: #989999 !important
         color: #DADADA
         pointer-events: none
     .button:before 
@@ -253,11 +253,11 @@ body
     display: flex
     flex-direction: column
     justify-content: flex-end
-    padding-bottom: 120px
+    padding-bottom: 180px
     box-sizing: border-box
 .telegram-button
     position: fixed 
-    bottom: 10px
+    bottom: 60px
     left: 50% 
     transform: translateX(-50%)
     width: 100%
@@ -313,7 +313,15 @@ body
     display: none
 .photo_reply.show
     display: block
-
+.photo_reply.show
+    animation: fade 5s
+@keyframes fade
+    0%
+        opacity: 0
+    99%
+        opacity: 0
+    100% 
+        opacity: 1
 .photo_reply.hide
     display: none
 .reply-wrapper
@@ -336,6 +344,55 @@ body
     display: flex 
     juctify-content: center 
     align-items: center
+.finger
+    font-size: 50px
+    z-index: 999
+    transform: rotate(-90deg)
+    animation: jump
+    animation-iteration-count: infinite
+    animation-duration: 1s
+    line-height: 1.5
+    width: 80px
+    height: 80px
+    margin-left: auto 
+    margin-right: auto
+@keyframes jump
+    0%
+        transform: rotate(-90deg) translateX(-20%) 
+    50%
+        transform: rotate(-90deg) translateX(0%)
+    100%
+        transform: rotate(-90deg) translateX(-20%)
+.chart-list
+    position: relative
+.call-to-action
+    text-align: center
+    font-size: 37px
+    font-weight: 700
+    white-space: nowrap
+    color: #E50B0B
+    padding: 10px 15px 
+    border: 3px solid #E50B0B
+    border-radius: 5px
+    background: #fff
+.call-to-action__wrapper
+    position: absolute 
+    top: 10vh
+    left: 50% 
+    transform: translateX(-50%)
+    display: none
+    z-index: 99
+//start footer style 
+.footer 
+    text-align: center
+    position: fixed 
+    bottom: 10px 
+    width: 100%
+    font-size: 14px
+.footer__item
+    padding-top: 5px
+//end footer style
+
 @import "media"
 
 
