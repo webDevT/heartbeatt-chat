@@ -2,19 +2,29 @@
 @import "fonts"
 
 //start global style
+html,
+body
+    height: 100%
+*
+    box-sizing: border-box
 body 
     margin: 0 
     padding: 0 
     font-family: sans-serif
+    overflow-x: hidden
+  
+
  
 .content 
-    width: 680px 
-    max-width: 100%
+    width: 680px
+    height: 100vh
+    max-width: 100vw
     margin-left: auto 
     margin-right: auto
-    min-height: 100vh
     background-size: cover 
     background-position: center
+
+
 .container 
     margin-left: auto 
     margin-right: auto 
@@ -248,13 +258,15 @@ body
     padding: 5px
     width: 50%  
 .chart-list
-    overflow: hidden
-    height: calc(100vh - 192px)
+    height: 100%
+    // overflow: hidden
+    height: calc(100vh - 188px)
     display: flex
     flex-direction: column
     justify-content: flex-end
     padding-bottom: 180px
     box-sizing: border-box
+
 .telegram-button
     position: fixed 
     bottom: 60px
