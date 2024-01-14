@@ -10,6 +10,9 @@
   "bot_name": "Katerina",
   "text_for_typing": "typing",
   "link_to_telegram": "https://t.me/love_stories_hotbot",
+  "bot_age": "28",
+  "bot_info": "Looking for a new friends for flirt and chat",
+  "call_to_action": "Want to Reply?",
 
   "_comment": "Первая реплика бота",
   "bot_reply_1": "Hey! It’s a pleasure to meet you! Are you ready for a flirt?",
@@ -40,11 +43,21 @@
   "bot_avatar": "img/photo.png",
   "user_avatar": "img/photo2.jpeg",
 
-  "_comment": "Цвет кнопок",
-  "button_color": "linear-gradient(#9A69D2, #BD8CE8)",
+  "_comment": "Цвет фона кнопок",
+  "button_background": "linear-gradient(#9A69D2, #BD8CE8)",
+  "header_button_background": "#fff",
 
   "_comment": "Фоновое изображение чата",
-  "chat_background": "img/bg.jpg"
+  "chat_background": "img/bg.jpg",
 
-  
+  "_comment": "Настройки футера",
+  "footer_item_1": "🔥 Most Popular Dating Game in Telegram!",
+  "footer_item_2": "🔞 Sexting simulator with Pics & Vidz.",
+
+  "_comment": "Настройки цвета текста",
+  "text_color": "#000",
+  "header_color": "#fff",
+  "button_color": "#fff",
+  "call_to_action_color": "#E50B0B"
+
 }

@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "gulp-sass": "^5.1.0",
+    "puppeteer": "^21.7.0",
+    "puppeteer-core": "^21.7.0",
     "sass": "^1.54.3",
     "slick-carousel": "^1.8.1"
   }

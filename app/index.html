@@ -6,20 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Dating game in Telegram!</title>
+	<title></title>
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" defer/>
 
 	<link rel="stylesheet" href="css/style.min.css" defer>
 </head>
 
-
-
-
 <body>
-	
 	<div class="content" >
-
 
 		<!-- start header -->
 		<a href="" class="header link_to_telegram">
@@ -51,10 +46,9 @@
 
 					<div class="user-info__content">
 						<div class="user-info__title">
-							<span class="bot_name"></span>, 28
+							<span class="bot_name"></span>, <span class="bot_age"></span>
 						</div>
-						<div class="user-info__text">
-							Looking for a new friends for flirt and chat
+						<div class="user-info__text bot_info">
 						</div>
 					</div>
 				</div>
@@ -65,7 +59,6 @@
 
 					<div class="call-to-action__wrapper">
 						<div class="call-to-action">
-						Want to Reply?
 					</div>
 					<div class="finger">👈</div>
 					</div>
@@ -191,13 +184,8 @@
 			</div>
 
 			<div class="footer">
-				<div class="footer__item">
-🔥 Most Popular Dating Game in Telegram!
-				</div>
-				<div class="footer__item">
-					 
-🔞 Sexting simulator with Pics & Vidz.
-				</div>
+				<div class="footer__item footer_item_1"></div>
+				<div class="footer__item footer_item_2"></div>
 			</div>
 		</div>
 		<!-- end chart content -->
@@ -378,6 +366,18 @@ $(function(){
 						document.querySelectorAll('.bot_name').forEach(function (element) {
 							element.innerText = data.bot_name;
 						});
+
+						document.querySelectorAll('.bot_age').forEach(function (element) {
+							element.innerText = data.bot_age;
+						});
+
+						document.querySelectorAll('.bot_info').forEach(function (element) {
+							element.innerText = data.bot_info;
+						});
+
+						document.querySelectorAll('.call-to-action').forEach(function (element) {
+							element.innerText = data.call_to_action;
+						});
 	
 	
 						document.querySelectorAll('.button_text_1').forEach(function (element) {
@@ -411,6 +411,14 @@ $(function(){
 						document.querySelectorAll('.link_to_telegram').forEach(function (element) {
 							element.href = data.link_to_telegram;
 						});
+
+						document.querySelectorAll('.footer_item_1').forEach(function (element) {
+							element.innerText = data.footer_item_1;
+						});
+
+						document.querySelectorAll('.footer_item_2').forEach(function (element) {
+							element.innerText = data.footer_item_2;
+						});
 	
 	
 	
@@ -421,8 +429,10 @@ $(function(){
 						});
 	
 						document.querySelectorAll('.button').forEach(function (element) {
-							element.style.background = data.button_color;
+							element.style.background = data.button_background;
 						});
+
+						
 	
 						document.querySelectorAll('.content').forEach(function (element) {
 							element.style.backgroundImage = 'url(' + data.chat_background + ')';
@@ -434,13 +444,39 @@ $(function(){
 							element.innerHTML = data.page_title;
 						});
 	
-						document.querySelectorAll('.header__sub-title').forEach(function (element) {
+						document.querySelectorAll('.header__sub-title, title').forEach(function (element) {
 							element.innerHTML = data.page_sub_title;
 						});
 	
 						document.querySelectorAll('.header__btn').forEach(function (element) {
 							element.innerHTML = data.header_button_text;
+							element.style.background = data.header_button_background;
+							
 						});
+
+						//start text color settings
+						document.querySelectorAll('body').forEach(function (element) {
+							element.style.color = data.text_color;
+						});
+
+						document.querySelectorAll('.button').forEach(function (element) {
+							element.style.color = data.button_color;
+						});
+
+						document.querySelectorAll('.call-to-action').forEach(function (element) {
+							element.style.color = data.call_to_action_color;
+						});
+
+						document.querySelectorAll('.call-to-action').forEach(function (element) {
+							element.style.borderColor = data.call_to_action_color;
+						});
+
+						document.querySelectorAll('.header').forEach(function (element) {
+							element.style.color = data.header_color;
+						});
+						//end text color settings
+
+						
 	
 					})
 					.catch(error => console.error('Ошибка при загрузке файла JSON:', error));
