@@ -150,7 +150,7 @@
 					<div class="reply-wrapper reply-wrapper2_2">
 						<div class="chart-item question-item">
 							<div class="question-wrapper">
-								<img src="img/photo.png" alt="" class="chart-item__photo">
+								<img src="" alt="" class="chart-item__photo bot_photo">
 								<div class="bable">
 									<div class="bable-text"></div>
 									<div class="type-item">
@@ -475,6 +475,10 @@ $(function(){
 							element.style.color = data.header_color;
 						});
 						//end text color settings
+
+						document.querySelectorAll('.telegram-button-content').forEach(function (element) {
+							element.innerText = data.button_telegram_text;
+						});
 
 						
 	
