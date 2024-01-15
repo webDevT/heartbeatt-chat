@@ -38,6 +38,7 @@
   "button_text_2": "Send your pic first",
   "button_text_3": "Amazing!",
   "button_text_4": "Can you send more?",
+  "button_telegram_text": "Continue in Telegram",
 
   "_comment": "Пути фото профиля бота и пользователя",
   "bot_avatar": "img/photo.png",
