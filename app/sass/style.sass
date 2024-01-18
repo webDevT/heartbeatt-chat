@@ -30,7 +30,7 @@ body
 .container 
     margin-left: auto 
     margin-right: auto 
-    width: 90%
+    width: 93%
 //end global style
 
 //start header style
@@ -43,6 +43,8 @@ body
     color: #fff
     display: block
     text-decoration: none
+    position: relative
+    z-index: 99
     .container 
         display: flex 
         justify-content: space-between
@@ -139,8 +141,9 @@ body
 //end chart content 
 
 //start buttons wrapper
-.buttons-wrapper,
-.buttons-wrapper--2
+.buttons-wrapper--1,
+.buttons-wrapper--2,
+.buttons-wrapper--3
     position: fixed 
     bottom: 60px
     left: 50%
@@ -149,23 +152,28 @@ body
     max-width: 100vw
     margin-left: auto 
     margin-right: auto
+    height: auto
     .container 
         display: flex 
-        align-items: center
+       
         justify-content: space-between
+        height: 100%
     .button 
         width: 49%
         display: flex 
         justify-content: center 
         align-items: center
         background: linear-gradient(#BD8CE8, #9A69D2)
-        height: 50px
         border-radius: 50px
         color: #fff
         font-size: 16px
         overflow: hidden
         position: relative
-        font-size: 16px
+        font-size: 20px
+        padding-top: 15px 
+        padding-bottom: 15px
+        text-align: center
+        min-height: auto
         &:before
             content: ''
             position: absolute
@@ -174,25 +182,26 @@ body
             width: 30px
             height: 100%
             background-color: rgba(#fff, 0.5)
-            transform: translateX(-40px) skewX(-45deg)
+            transform: translateX(-50px) skewX(-45deg)
             animation: move-light 5s
             animation-iteration-count: infinite
             
 @keyframes move-light
     0%
-        transform: translateX(-40px) skewX(-45deg)
+        transform: translateX(-50px) skewX(-45deg)
     10%
         transform: translateX(400px) skewX(-45deg)
     14%
         transform: translateX(400px) skewX(-45deg)
     18%
-        transform: translateX(-40px) skewX(-45deg)
+        transform: translateX(-50px) skewX(-45deg)
     100%
-        transform: translateX(-40px) skewX(-45deg)
+        transform: translateX(-50px) skewX(-45deg)
 .button 
     cursor: pointer
-.buttons-wrapper .button--pic:before,
-.buttons-wrapper--2 .button--send-more:before
+.buttons-wrapper--1 .button--pic:before,
+.buttons-wrapper--2 .button--send-more:before,
+.buttons-wrapper--3.button:last-child:before
     animation-delay: 2s
 
 
@@ -227,7 +236,7 @@ body
     30%
         transform: translateY(-5px)
 //end typing style
-.buttons-wrapper 
+.buttons-wrapper--1 
     display: none
 .answer-item
     display: none
@@ -240,7 +249,9 @@ body
     width: 100%
     justify-content: flex-end
     align-items: flex-end
-.buttons-wrapper.disabled 
+.buttons-wrapper--1.disabled,
+.buttons-wrapper--2.disabled,
+.buttons-wrapper--3.disabled
     .button 
         background: #989999 !important
         color: #DADADA
@@ -285,7 +296,7 @@ body
     color: #fff
 .telegram-button-content
     width: 600px 
-    max-width: 90%
+    max-width: 93%
     height: 50px 
     background: linear-gradient(#9A69D2, #BD8CE8)
     margin-left: auto 
@@ -322,7 +333,8 @@ body
     100%
         transform: translateX(-70px) skewX(-45deg)
 
-.buttons-wrapper--2
+.buttons-wrapper--2,
+.buttons-wrapper--3
     display: none
 .telegram-button-content
     text-decoration: none
@@ -413,9 +425,17 @@ body
     font-size: 14px
 .footer__item
     padding-top: 5px
-
 //end footer style
 
+.buttons-wrapper--1.one,
+.buttons-wrapper--2.one,
+.buttons-wrapper--3.one
+    .button:last-child 
+        display: none
+    .button:first-child 
+        width: 100%
+.reply-wrapper.hide 
+    display: none
 @import "media"
 
 
