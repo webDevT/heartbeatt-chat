@@ -99,16 +99,16 @@
 					<!-- start user reply 1 -->
 					<div class="chart-item chart-item--reverse answer-1 answer-item">
 						<div class="chart-item__wrapper">
-							<div class="bable button_text_1"></div>
+							<div class="bable"></div>
 							<img src="" alt="" class="chart-item__photo user_photo">
 						</div>
 					</div>
 					<!-- end user reply 1 -->
 
 					<!-- start user reply 1_2 -->
-					<div class="chart-item chart-item--reverse answer-1-option-2 answer-item">
+					<div class="chart-item chart-item--reverse answer-1-2 answer-item">
 						<div class="chart-item__wrapper">
-							<div class="bable button_text_2"></div>
+							<div class="bable"></div>
 							<img src="" alt="" class="chart-item__photo user_photo">
 						</div>
 					</div>
@@ -144,7 +144,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- start bot reply 2_1 -->
+					<!-- start bot reply 2 -->
+
+					
 
 					<!-- start bot reply 2_2 -->
 					<div class="reply-wrapper reply-wrapper2_2">
@@ -179,6 +181,15 @@
 					</div>
 					<!-- end bot reply 2_2 -->
 
+					<!-- start user reply 2_2 -->
+					<div class="chart-item chart-item--reverse answer-2 answer-item">
+						<div class="chart-item__wrapper">
+							<div class="bable"></div>
+							<img src="" alt="" class="chart-item__photo user_photo">
+						</div>
+					</div>
+					<!-- end user reply 2 -->
+
 					<!-- start bot reply 2_3 -->
 					<div class="reply-wrapper reply-wrapper2_3">
 						<div class="chart-item question-item">
@@ -211,6 +222,16 @@
 
 					</div>
 					<!-- end bot reply 2_3 -->
+
+					<!-- start user reply 2_2 -->
+					<div class="chart-item chart-item--reverse answer-3 answer-item">
+						<div class="chart-item__wrapper">
+							<div class="bable"></div>
+							<img src="" alt="" class="chart-item__photo user_photo">
+						</div>
+					</div>
+					<!-- end user reply 2 -->
+
 
 				</div>
 				<!-- end chart list -->
@@ -285,7 +306,6 @@ $(function(){
 	
 	
 			$('.button--flirt').click(function () {
-				$('.answer-1').fadeIn();
 				$(this).parent().parent().addClass('disabled');
 				$('.reply-wrapper2_1').delay(1000).fadeIn();
 				$('.reply-wrapper2_1 .type-item').fadeIn().delay(3000).fadeOut();
@@ -294,13 +314,12 @@ $(function(){
 			})
 	
 			$('.button--pic').click(function () {
-				$('.answer-1-option-2').fadeIn();
 				$(this).parent().parent().addClass('disabled');
 				$('.reply-wrapper2_2').delay(1000).fadeIn();
 				$('.reply-wrapper2_2 .type-item').fadeIn().delay(3000).fadeOut();
 				$('.reply-wrapper2_2 .bable-text').hide().delay(4000).fadeIn();
 				$('.buttons-wrapper--1').delay(4000).fadeOut();
-				$('.buttons-wrapper--2').delay(6000).fadeIn();
+				$('.buttons-wrapper--2').delay(5000).fadeIn();
 	
 			})
 	
@@ -323,6 +342,42 @@ $(function(){
 			$('.button').click(function(){
 				$('.call-to-action__wrapper').fadeOut();
 			})
+
+			$('.button_text_1').click(function(){
+				 var buttonText = $(this).text();
+				 $('.answer-1 .bable').text(buttonText);
+				 $('.answer-1').fadeIn();
+			});
+
+			$('.button_text_2').click(function(){
+				 var buttonText = $(this).text();
+				 $('.answer-1-2 .bable').text(buttonText);
+				 $('.answer-1-2').fadeIn();
+			});
+
+			$('.button_text_3').click(function(){
+				 var buttonText = $(this).text();
+				 $('.answer-2 .bable').text(buttonText);
+				 $('.answer-2').fadeIn();
+			});
+
+			$('.button_text_4').click(function(){
+				 var buttonText = $(this).text();
+				 $('.answer-2 .bable').text(buttonText);
+				 $('.answer-2').fadeIn();
+			});
+
+			$('.button_text_5').click(function(){
+				 var buttonText = $(this).text();
+				 $('.answer-3 .bable').text(buttonText);
+				 $('.answer-3').fadeIn();
+			});
+
+			$('.button_text_6').click(function(){
+				 var buttonText = $(this).text();
+				 $('.answer-3 .bable').text(buttonText);
+				 $('.answer-3').fadeIn();
+			});
 	
 	
 		});

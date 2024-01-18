@@ -46,8 +46,8 @@
   "photo_position_2_3": "photo_bottom",
   "bot_photo_2_3": "img/photo.png",
   "buttons_quantity_3": "two",
-  "button_text_5": "Amazing",
-  "button_text_6": "Can you send more?",
+  "button_text_5": "Yes, I want",
+  "button_text_6": "Yes, I want to flirt!",
 
   "_comment": "Пути фото профиля бота и пользователя",
   "bot_avatar": "img/photo.png",
