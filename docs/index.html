@@ -268,21 +268,39 @@
 		<!-- start buttons wrapper -->
 		<div class="buttons-wrapper buttons-wrapper--3">
 			<div class="container">
-				<div class="button button--amazing button_text_5">yti</div>
-				<div class="button button--send-more button_text_6">tyr</div>
+				<div class="button button--amazing button_text_5"></div>
+				<div class="button button--send-more button_text_6"></div>
 			</div>
 
 		</div>
 		<!-- end buttons wrapper -->
 
 
+<div class="final-screen">
 
-		<div class="telegram-button">
+	<div class="call-to-action__wrapper--final">
+		<div class="call-to-action-final">
+			<div class="call-to-action-final__title">
+				Love Stories
+			</div>
+			<div class="call-to-action-final__sub-title">
+Dating Game in Telegram
+			</div>
+				
+			
+
+	</div>
+	<div class="finger">👈</div>
+	</div>
+
+	<div class="telegram-button">
 			<a href="" class="telegram-button-content link_to_telegram">
 				Continue in Telegram
 			</a>
 
 		</div>
+</div>
+		
 
 
 	</div>
@@ -306,11 +324,11 @@ $(function(){
 	
 	
 			$('.button--flirt').click(function () {
-				$(this).parent().parent().addClass('disabled');
+				$(this).parent().parent().addClass('disabled').delay(4000).fadeOut();
 				$('.reply-wrapper2_1').delay(1000).fadeIn();
 				$('.reply-wrapper2_1 .type-item').fadeIn().delay(3000).fadeOut();
 				$('.reply-wrapper2_1 .bable-text').hide().delay(4000).fadeIn();
-				$('.telegram-button').delay(4000).fadeIn();
+				$('.final-screen').delay(4000).fadeIn();
 			})
 	
 			$('.button--pic').click(function () {
@@ -333,7 +351,7 @@ $(function(){
 
 			$('.buttons-wrapper--3 .button').click(function () {
 				$(this).parent().fadeOut();
-				$('.telegram-button').delay(500).fadeIn();
+				$('.final-screen').delay(500).fadeIn();
 
 			})
 	
@@ -343,17 +361,22 @@ $(function(){
 				$('.call-to-action__wrapper').fadeOut();
 			})
 
+			$('.button_text_2').click(function(){
+				 var buttonText = $(this).text();
+				 $('.answer-1-2 .bable').text(buttonText);
+				 $('.answer-1-2').fadeIn();
+			});
+
+
+			
+
 			$('.button_text_1').click(function(){
 				 var buttonText = $(this).text();
 				 $('.answer-1 .bable').text(buttonText);
 				 $('.answer-1').fadeIn();
 			});
 
-			$('.button_text_2').click(function(){
-				 var buttonText = $(this).text();
-				 $('.answer-1-2 .bable').text(buttonText);
-				 $('.answer-1-2').fadeIn();
-			});
+			
 
 			$('.button_text_3').click(function(){
 				 var buttonText = $(this).text();
@@ -378,9 +401,21 @@ $(function(){
 				 $('.answer-3 .bable').text(buttonText);
 				 $('.answer-3').fadeIn();
 			});
+
+			$('.buttons-wrapper--1 .button').click(function(){
+				$('.user-info').fadeOut();			
+				var userInfoContent = $('.user-info').html();
+    $('.header .container').html(userInfoContent);
+	$('.header').addClass('active');
+			})
+
+		
+		
 	
 	
 		});
+
+
 	
 		</script>
 		<script >
